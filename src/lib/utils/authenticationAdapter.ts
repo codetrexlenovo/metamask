@@ -43,7 +43,8 @@ export const authenticationAdapter = createAuthenticationAdapter({
   signOut: async () => {
     await fetch('/api/logout');
   },
-  getMessageBody: function (): string {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  getMessageBody: function (args: { message: unknown; }): string {
     throw new Error('Function not implemented.');
   }
 });
