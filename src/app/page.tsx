@@ -3,7 +3,7 @@
 // import React, { useEffect, useState } from "react";
 import React, { useEffect } from "react";
 // import { useParams, usePathname, useRouter } from "next/navigation";
-import { useRouter } from "next/navigation";
+//import { useRouter } from "next/navigation";
 // import Image from "next/image";
 // import { w3, contract } from "@/lib/web3";
 import ConnectWalletButton from "@/app/components/shared/ConnectWalletButton";
@@ -12,12 +12,12 @@ import Link from "next/link";
 
 const InvestmentPortfolio = () => {
   // const [beneficiaryAddress, setBeneficiaryAddress] = useState("");
-  const router = useRouter();
+  //const router = useRouter();
   const { isConnected, address } = useAccount();
 
   useEffect(() => {
     if (isConnected) {
-      router.push(`/investmentform?beneficiary=${address}`);
+      //router.push(`/investmentform?beneficiary=${address}`);
     }
   }, [isConnected, address]);
 
