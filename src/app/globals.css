@@ -1,0 +1,444 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.view-scroll {
+  scroll-behavior: smooth;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+/* @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  @layer base {
+    :root {
+      --background: 0 0% 100%;
+      --foreground: 222.2 84% 4.9%;
+
+      --card: 0 0% 100%;
+      --card-foreground: 222.2 84% 4.9%;
+
+      --popover: 0 0% 100%;
+      --popover-foreground: 222.2 84% 4.9%;
+
+      --primary: 222.2 47.4% 11.2%;
+      --primary-foreground: 210 40% 98%;
+
+      --secondary: 210 40% 96.1%;
+      --secondary-foreground: 222.2 47.4% 11.2%;
+
+      --muted: 210 40% 96.1%;
+      --muted-foreground: 215.4 16.3% 46.9%;
+
+      --accent: 210 40% 96.1%;
+      --accent-foreground: 222.2 47.4% 11.2%;
+
+      --destructive: 0 84.2% 60.2%;
+      --destructive-foreground: 210 40% 98%;
+
+      --border: 214.3 31.8% 91.4%;
+      --input: 214.3 31.8% 91.4%;
+      --ring: 222.2 84% 4.9%;
+
+      --radius: 0.5rem;
+    }
+
+    .dark {
+      --background: 222.2 84% 4.9%;
+      --foreground: 210 40% 98%;
+
+      --card: 222.2 84% 4.9%;
+      --card-foreground: 210 40% 98%;
+
+      --popover: 222.2 84% 4.9%;
+      --popover-foreground: 210 40% 98%;
+
+      --primary: 210 40% 98%;
+      --primary-foreground: 222.2 47.4% 11.2%;
+
+      --secondary: 217.2 32.6% 17.5%;
+      --secondary-foreground: 210 40% 98%;
+
+      --muted: 217.2 32.6% 17.5%;
+      --muted-foreground: 215 20.2% 65.1%;
+
+      --accent: 217.2 32.6% 17.5%;
+      --accent-foreground: 210 40% 98%;
+
+      --destructive: 0 62.8% 30.6%;
+      --destructive-foreground: 210 40% 98%;
+
+      --border: 217.2 32.6% 17.5%;
+      --input: 217.2 32.6% 17.5%;
+      --ring: 212.7 26.8% 83.9%;
+    }
+  }
+
+  @layer base {
+    * {
+      @apply border-border;
+    }
+    body {
+      @apply bg-background text-foreground;
+    }
+  } */
+
+  
+  
+ 
+/* body{
+    font-family: 'Montserrat', sans-serif;
+  } */
+.letter-spacing-1-5 {
+  letter-spacing: 1.5px;
+}
+
+.borderRadius-200 {
+  border-radius: 200px;
+}
+
+.gap-55 {
+  gap: 55px;
+}
+
+.montserratFont {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.fontSize36 {
+  font-size: 36px;
+  line-height: 56px;
+  font-weight: 600;
+}
+
+.canvas-sec#canvas {
+  width: 100% !important;
+  height: 100%;
+  border: 1px solid #fff;
+  border-radius: 40px;
+}
+
+.partner-scroll-x {
+  width: max-content;
+  flex-wrap: nowrap;
+  display: flex;
+  gap: 13px;
+  animation: partners_scroll 15s linear infinite forwards;
+}
+
+.partner-scroll-x:hover {
+  animation-play-state: paused;
+}
+
+@keyframes partners_scroll {
+  100% {
+    /* transform: translate(calc(-50% - 2.25rem)); */
+    transform: translate(calc(193px * 12 * -1));
+  }
+}
+
+.partner-scroll-x2 {
+  width: max-content;
+  flex-wrap: nowrap;
+  display: flex;
+  gap: 13px;
+  animation: partners_scroll2 15s linear infinite reverse;
+}
+
+.partner-scroll-x2:hover {
+  animation-play-state: paused;
+}
+
+@keyframes partners_scroll2 {
+  100% {
+    /* transform: translate(calc(-50% - 2.25rem)); */
+    transform: translate(calc(193px * 12 * -1));
+  }
+}
+
+
+.footer-img {
+  max-width: 378px;
+}
+
+.color-light-white {
+  color: #CCCCCC;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+
+.border-20 {
+  border-radius: 20px;
+}
+
+.blog-arrow {
+  background-color: #ffffff;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all .3s ease;
+  position: relative;
+  bottom: 0px;
+  box-shadow: 0px 0px 20px #d8ddf5;
+}
+
+.blog-arrow:hover {
+  background-color: #0D0D0D;
+  cursor: pointer;
+}
+
+.blog-arrow:hover svg path {
+  fill: #C980FF;
+}
+
+.borderRadius-b-60 {
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+
+.borderRadius-t-30 {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.-top-18 {
+  top: -18rem;
+}
+
+.max-w-384 {
+  max-width: 384px;
+}
+
+.gradient-border {
+  position: relative;
+  padding: 7px;
+  /* background: linear-gradient(to top, white 60%, #0D0D0D 40%); */
+  background-color: #ffffff;
+  border-radius: 66px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #7E97FF, #C980FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-border .content {
+  position: relative;
+  background: white;
+  border-radius: 60px;
+  padding: 20px;
+  z-index: 1;
+  height: 100%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+
+.util-background {
+  background: url('/images/utillSection.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 821px;
+}
+
+.background-opacity-4 {
+  opacity: .4;
+}
+
+.border-r-color {
+  border: 3px solid #ffffff;
+  border-radius: 20px;
+}
+
+.max-w-3xl {
+  max-width: 48rem;
+}
+
+.CounterfeitManagement-img {
+  background: url('/images/CounterfeitManagement/03.jpg');
+  background-repeat: no-repeat;
+  background-size: 220%;
+  background-position: -40px;
+}
+.nft-img{
+  background: url('/images/NFT.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0px;
+}
+.carbonUsageMonitoring-img {
+  background: url('/images/CarbonUsageMonitoring/04.jpg');
+  background-repeat: no-repeat;
+  background-size: 240%;
+  background-position: 60%;
+  opacity: .6;
+}
+.carbonUsageMonitoring-img1{
+  background: url('/images/CarbonUsageMonitoring/05.png');
+    background-repeat: no-repeat;
+    background-size: 400%;
+    background-position-x: 50%;
+    background-position-y: 90%;
+    opacity: .8;
+}
+.carbonUsageMonitoring-img5{
+  background: url('/images/CarbonUsageMonitoring/03.png');
+  background-repeat: no-repeat;
+  background-size: 125%;
+  opacity: .4;
+  border-bottom-left-radius: 55px;
+  border-bottom-right-radius: 55px;
+}
+.sustainability-img{
+  background: url('/images/CarbonUsageMonitoring/01.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* background-position-x: 50%;
+    background-position-y: 90%; */
+    opacity: .7;
+}
+.supplyChain {
+  list-style: disc;
+  padding-left: 25px;
+}
+
+.supplyChain li {
+  padding-top: 5px;
+}
+
+.leading-10 {
+  line-height: 2.5rem;
+}
+
+.leading-8 {
+  line-height: 2rem;
+}
+.min-w-123{
+  min-width: 123px;
+}
+.navMenuLevel a:hover, .navMenuLevel button:hover{
+  color: #7E97FF;
+}
+.colorBlue{
+  color: #7E97FF !important;
+}
+.border-1{
+  border-width: 1px;
+}
+.max-w-415{
+  max-width: 415px;
+}
+.max-w-597 {
+  max-width: 597px;
+}
+.-right-447{
+  right: -447px;
+}
+.h-517{
+  height: 517px;
+}
+.width-33-22{
+  width: calc(33.33% - 22px);
+}
+.flex.w-screen.fixed.inset-0.z-50.overflow-x-auto.justify-center.items-end{
+  background:rgb(217 217 217 / 60%);
+  z-index: 1000;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+@media (max-width: 576px){
+  .canvas-sec#canvas{
+border-radius: 12px;
+}
+.partner-scroll-x img,.partner-scroll-x2 img {
+  max-width: 100px;
+}
+.footer-img {
+  max-width: 150px;
+}
+}
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

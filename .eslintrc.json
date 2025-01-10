@@ -1,0 +1,19 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "off", // Use a warning instead of turning it off
+    "@typescript-eslint/no-unused-vars": [
+      "off", 
+      { 
+        "argsIgnorePattern": "^_" // Ignore unused arguments that start with _
+      }
+    ]
+  },
+  "ignorePatterns": [
+    ".next/", 
+    "node_modules/"
+  ]
+}
